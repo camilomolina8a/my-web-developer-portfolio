@@ -1,16 +1,63 @@
-html,
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background-black-one: #131313;
+    --background-buttons-green: #51c072;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  
+    background-color: rgb(30,30,30);
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
+    position: relative;
 }
 
-* {
-  box-sizing: border-box;
+.bg-black-primary {
+    background-color: var(--background-black-one);
 }
 
+.bg-green-btn {
+    background-color: var(--background-buttons-green);
+}
+
+
+/* Border inferior al pasar cursor en el menu */
+.border-bottom::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: #59c378;
+    content: "";
+    opacity: 0;
+    border-radius: 3px;
+    transition: all .5s;
+}
+
+.border-bottom:hover::before {
+    opacity: 1;
+    /* visibility: visible; */
+}
+
+/*-- Para el menu responsive --*/
+.menu-transition {
+    transition: all .4s ease-out 0s;
+}
+/*-----------------------------*/
