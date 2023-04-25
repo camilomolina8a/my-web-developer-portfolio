@@ -1,0 +1,43 @@
+/* ------- Sphere ---- */
+.text-sphere {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tagcloud {
+    color: white;
+    user-select: none;
+}
+
+.tagcloud--item {
+    background: -webkit-linear-gradient(30deg, #6951f0 2.34%, #ff00ea 120%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Rubik", "sans-serif";
+    cursor: pointer;
+    transition: all 0.3s;
+
+}
+.tagcloud--item:hover {
+    text-shadow: 0 0 0.06rem white,0 0 1rem #6951f0;
+}
+
+/* ----------- END Sphere ------------- */
+
+.link {
+    transition: all 0.3s;
+    font-weight: 600;
+    background: -webkit-linear-gradient(30deg, #6951f0 2.34%, #ff00ea 120%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+.link:hover {
+    text-shadow: 0 0 0.06rem #fff,0 0 1rem #6951f0;
+}

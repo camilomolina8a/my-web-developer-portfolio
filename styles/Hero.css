@@ -1,0 +1,108 @@
+.letter {
+    transition: color 0.25s;
+    display: inline-block;
+}
+.letter:hover {
+    background: -webkit-linear-gradient(25deg, #2600fc 2.34%, #ff00ea 100.78%); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Bounce letter animation */
+
+.bouncing {
+    animation: rubberBand 800ms alternate ease-out;
+}
+
+@keyframes rubberBand {
+    0% {
+        transform: scaleX(1);
+    }
+    40% {
+        transform: scaleX(1.12) scaleY(0.9);
+    }
+    55% {
+        transform: scaleX(0.9) scaleY(1);
+    }
+    65% {
+        transform: scaleX(1.09) scaleY(0.85);
+    }
+    75% {
+        transform: scaleX(0.85) scaleY(1);
+    }
+    90% {
+        transform: scaleX(1.15) scaleY(0.95);
+    }
+    100% {
+        transform: scaleX(1) scaleY(1);
+    }
+}
+/* ---- END Bounce letter animation -----*/
+
+/* ----- Profession animation ------*/
+.item {
+    position: absolute;
+    animation: roll 9s ease-in-out 1s infinite backwards;
+    background: -webkit-linear-gradient(25deg, #2600fc 2.34%, #ff00ea 100.78%); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+.item:nth-child(1) {
+    animation-delay: 0s;
+    opacity: 0;
+}
+.item:nth-child(2) {
+    animation-delay: 3s;
+    opacity: 0;
+}
+.item:nth-child(3) {
+    animation-delay: 6s;
+    opacity: 0;
+}
+
+@keyframes roll {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -12%, 0);
+    }
+    8%,
+    27% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+    35%,
+    100% {
+        opacity: 0;
+        transform: translate3d(0, 15%, 0);
+    }
+}
+
+/* ----------- END Profession animation--------------- */
+.rn-gradient {
+    position: fixed;
+    z-index: -1;
+    width: 500px;
+    height: 500px;
+    border-radius: 1000px;
+    -webkit-filter: blur(100px);
+    filter: blur(100px);
+}
+
+.circle-1 {
+    left: -180px;
+    top: -200px;
+    bottom: auto;
+    opacity: 0.2;
+    background: -webkit-linear-gradient(25deg, #2600fc, #ff00ea);
+}
+
+.circle-2 {
+    right: -260px;
+    bottom: -250px;
+    opacity: 0.15;
+    background: -webkit-linear-gradient(25deg, cyan, #ff00ea);
+}
+

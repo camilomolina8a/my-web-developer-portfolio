@@ -7,7 +7,7 @@ const Navbar = () => {
     const [toggle, setToggle] = useState(true);
 
     return (
-        <nav className="flex my-0 px-5 md:px-0 md:mx-auto md:h-[45px] justify-between items-center border-[1px] text-white w-[100%] md:w-[95%] ">
+        <nav className="flex my-0 px-5 md:px-0 md:mx-auto md:h-[45px] justify-between items-center border-[1px] text-white w-[100%] md:w-[95%] lg:max-w-[1140px] lg:py-8">
             <div>
                 <h2 className="text-3xl text-white font-poppins">Camilo</h2>
             </div>
@@ -15,7 +15,7 @@ const Navbar = () => {
             <ul className="hidden md:flex justify-between  h-full ">
                 {navLinks.map((navlink, index) => (
                     <li
-                        className={`relative text-base px-[10px] flex items-center font-poppins font-medium border-bottom  ${
+                        className={`relative text-lg px-[12px] flex items-center font-poppins font-medium border-bottom ${
                             index === navLinks.length - 1 ? "mr-0" : "mr-5"
                         }`}
                         key={navlink.id}
@@ -30,9 +30,10 @@ const Navbar = () => {
             <a
                 download="My CV"
                 href="images/cv.jpg"
-                className={`md:block hidden p-2 bg-green-btn text-base font-poppins rounded-[40px]`}
+                className={`md:flex hidden btn btn-gradient h-[43px] text-base font-poppins`}
             >
-                Resume
+                <span>Resume</span>
+
                 <span className="ml-2">
                     <Image
                         src="/images/download-icon.png"
@@ -45,8 +46,11 @@ const Navbar = () => {
 
             {/* ------------ Mobile and tablet menu ------------ */}
 
-            <div className={`block md:hidden w-[28px] h-[28px] ${!toggle ? "relative mt-[3px] left-[5px]" : "mt-0" }`}>
-
+            <div
+                className={`block md:hidden w-[28px] h-[28px] ${
+                    !toggle ? "relative mt-[3px] left-[5px]" : "mt-0"
+                }`}
+            >
                 {toggle ? (
                     <Image
                         src="/images/menu.svg"

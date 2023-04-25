@@ -1,21 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "MabryPro";
+    src: url("/fonts/MabryPro-Regular.woff") format("woff"),
+        url("/fonts/MabryPro-Bold.woff") format("woff"),
+        url("/fonts/MabryPro-Light.woff") format("woff");
+}
+
 :root {
     --background-black-one: #131313;
-    --background-buttons-green: #51c072;
+    --paragraph-color: #acacac;
+    --text-gradient-1: #2600fc;
+    --text-gradient-2: #af40a6;
 }
 
 body {
-    background-color: rgb(30,30,30);
+    background-color: rgb(30, 30, 30);
 }
-
 *,
-*::before,
-*::after {
+::before,
+::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -23,32 +32,102 @@ body {
 }
 
 a {
-    color: inherit;
     text-decoration: none;
     position: relative;
 }
 
+.prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+/* ---------- Colors ---------------------*/
 .bg-black-primary {
     background-color: var(--background-black-one);
 }
 
-.bg-green-btn {
-    background-color: var(--background-buttons-green);
+.text-gray {
+    color: var(--paragraph-color);
+}
+/* ---------------------------------------- */
+
+/* Button */
+.btn {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -o-border-radius: 50px;
+    -ms-border-radius: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 1.2;
+    padding: 14px 24px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    white-space: nowrap;
+    color: white;
+    overflow: hidden;
 }
 
+.btn-gradient {
+    position: relative;
+    z-index: 0;
+    background-color: none;
+}
+.btn-gradient::after {
+    content: "";
+    position: absolute;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -o-border-radius: 50px;
+    -ms-border-radius: 50px;
+    border-radius: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    z-index: -1;
+    transition: all 0.3s;
+    background: -webkit-linear-gradient(25deg, #2600fc 2.34%, #ff00ea 120.78%); 
+}
+
+.btn-gradient:hover::after {
+    opacity: 1;
+}
+
+.btn-gradient:hover {
+    text-shadow: 0 0 0.5rem #8800F4,0 0 0.125rem #2600fc;
+    box-shadow: inset 0 0 2rem 0 #ff00ea, 0 0 0.6rem 0 #8800F4;
+}
+/* ------------------------------------------------------*/
 
 /* Border inferior al pasar cursor en el menu */
 .border-bottom::before {
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -18px;
     width: 100%;
     height: 3px;
-    background: #59c378;
+    background-image: linear-gradient(
+        20deg,
+        var(--text-gradient-1),
+        var(--text-gradient-2)
+    );
     content: "";
     opacity: 0;
     border-radius: 3px;
-    transition: all .5s;
+    transition: all 0.5s;
 }
 
 .border-bottom:hover::before {
@@ -58,6 +137,10 @@ a {
 
 /*-- Para el menu responsive --*/
 .menu-transition {
-    transition: all .4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
 }
 /*-----------------------------*/
+
+.tee{
+    text-shadow: 0 0 0.5rem #8800F4,0 0 0.125rem #2600fc;
+}
