@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Navbar, Hero, About } from "../components";
+import { Navbar, Hero, About, Contact} from "../components";
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
       <Navbar/>
       <Hero/>
       <About/>
+      <Contact/>
       
     </div>
   )
