@@ -1,12 +1,14 @@
 .letter {
     transition: color 0.25s;
     display: inline-block;
+    text-shadow: 2px 2px 7px #0a0a0a;
 }
 .letter:hover {
     background: -webkit-linear-gradient(25deg, #2600fc 2.34%, #ff00ea 100.78%); 
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-shadow: none;
 }
 /* Bounce letter animation */
 

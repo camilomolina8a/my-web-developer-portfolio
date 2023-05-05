@@ -17,6 +17,7 @@
     --paragraph-color: #acacac;
     --text-gradient-1: #2600fc;
     --text-gradient-2: #af40a6;
+    --bg-input: #100d25;
 }
 
 body {
@@ -87,11 +88,11 @@ a {
 .btn-gradient::after {
     content: "";
     position: absolute;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -o-border-radius: 50px;
-    -ms-border-radius: 50px;
-    border-radius: 50px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -o-border-radius:20px;
+    -ms-border-radius:20px;
+    border-radius:20px;
     left: 0;
     top: 0;
     width: 100%;

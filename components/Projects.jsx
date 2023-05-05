@@ -1,4 +1,3 @@
-import EarthCanvas from "./canvas/Earth";
 
 function Projects() {
     return (
