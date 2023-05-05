@@ -4,7 +4,7 @@ const Hero = () => {
     // Function to add and remove the bouncing class to each letter with it.
 
     return (
-        <div className="lg:max-w-[1140px] h-[calc(100vh-66px)] m-auto border">
+        <div className="lg:max-w-[1140px] h-[calc(100vh-66px)] m-auto ">
             <h1 className="text-[6rem] text-white leading-[6.8rem] font-rubik font-[700] prevent-select ">
                 <span
                     className="text-[2.2rem] letter"

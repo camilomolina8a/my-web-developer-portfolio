@@ -3,8 +3,8 @@ import { toggleRubberBand } from "../helpers/toggleRubberBand";
 
 function About() {
     return (
-        <div className="max-w-[1140px] border mx-auto">
-            <div className="border w-full h-[90vh] flex">
+        <div className="max-w-[1140px] mx-auto">
+            <div className=" w-full h-[90vh] flex">
                 <div className="flex items-center lg:w-1/2">
                     <TextSphere />
                 </div>

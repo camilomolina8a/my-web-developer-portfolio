@@ -1,23 +1,25 @@
 .form-container {
-    font-family: "Rubik","sans-serif";
+    font-family: "Rubik", "sans-serif";
     /* border: 1px solid rgba(255, 255, 255, 0.3); */
     padding: 1.5rem;
     border-radius: 20px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgb(255, 255, 255,0.4 );
+    border: 1px solid rgb(255, 255, 255, 0.4);
 
     /* background: -webkit-linear-gradient(45deg, #151031 25.34%, #a7009927 100.78%); */
     background-color: rgba(21, 16, 49, 0.8);
 }
 
-.form-container input,.form-container textarea {
+.form-container input,
+.form-container textarea {
     background-color: var(--bg-input);
     color: rgba(255, 255, 255, 0.65);
     border-radius: 10px;
 }
-.form-container input:focus,.form-container textarea:focus {
+.form-container input:focus,
+.form-container textarea:focus {
     outline: 2px solid rgb(27, 18, 78);
 }
 

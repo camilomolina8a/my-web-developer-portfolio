@@ -23,9 +23,9 @@ function Contact() {
     const handleSubmit = {};
 
     return (
-        <div className="flex flex-col items-center relative lg:h-[100vh]">
+        <div className="mt-10 flex flex-col items-center relative lg:h-[100vh]">
             <div className="flex h-full items-center lg:max-w-[1140px] w-full ">
-                <div className="flex h-full flex-col justify-center items-center w-1/2 border">
+                <div className="flex h-full flex-col justify-center items-center w-1/2 ">
                     <h2 className=" text-white font-rubik text-[5.8rem] prevent-select font-[600] text-center ">
                         <span
                             className="letter"
@@ -70,18 +70,22 @@ function Contact() {
                             t
                         </span>
                     </h2>
-                    <p className=" text-gray-400 font-rubik text-[1.1rem] text-center border">
+
+                    <p className=" text-gray-400 font-rubik text-[1.2rem] text-center lg:max-w-[550px] ">
                         I&apos;m interested in freelance opportunities all
                         around the world. <br className="hidden lg:block" /> If
                         you have other request or question, fell free to contact
                         me.{" "}
                     </p>
-                    <div className="border lg:h-[400px]">
+
+                    <div className=" lg:h-[350px] relative">
                         <EarthCanvas />
                     </div>
+
+                        
                 </div>
 
-                <div className="flex flex-col items-center justify-center w-1/2 ">
+                <div className="flex flex-col justify-evenly items-center h-full  w-1/2 ">
                     <div className="form-container w-3/4">
                         <h3 className="mb-3 text-white font-rubik font-[600] text-[2rem] prevent-select">
                             <span
@@ -186,12 +190,6 @@ function Contact() {
                                 {loading ? "Sending..." : "Send"}
                             </button>
                         </form>
-                    </div>
-
-                    <div className="border">
-                        <Image src="/images/linkedin.svg" alt="LinkedIn" width={30} height={30} className="social-icon"/>
-                        <Image src="/images/github.svg" alt="Github" width={30} height={30} className="social-icon"/>
-                        <Image src="/images/twitter.svg" alt="Twitter" width={30} height={30} className="social-icon"/>
                     </div>
                 </div>
             </div>
