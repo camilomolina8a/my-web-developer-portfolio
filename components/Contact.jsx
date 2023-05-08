@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 import Image from "next/image";
 
@@ -20,7 +21,52 @@ function Contact() {
         setForm({ ...form, [e.target.name]: [e.target.value] });
     };
 
-    const handleSubmit = {};
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setLoading(true);
+
+        emailjs
+            .send(
+                //template ID
+                "template_bo6cf3o",
+
+                //service ID
+                "service_dqpwmmn",
+                {
+                    from_name: form.name,
+                    to_name: "Camilo",
+                    from_email: form.email,
+                    to_email: "camilomolina.dev@gmail.com",
+                    message: form.message,
+                },
+                //public key
+                "VyPaKfl4sDKxHN9DR"
+            )
+            .then(
+                () => {
+                    setLoading(false);
+
+                    // Lo que quieras que pase luego de enviar el formulario
+                    alert(
+                        "Thank you for contact me, I will get back to you as soon as possible."
+                    );
+
+                    // Empty form again
+                    setForm({
+                        name: "",
+                        email: "",
+                        message: "",
+                    });
+                },
+                (error) => {
+                    setLoading(false);
+
+                    console.log(error);
+
+                    alert("Something went wrong.");
+                }
+            );
+    };
 
     return (
         <div className="mt-10 flex flex-col items-center relative lg:h-[100vh]">
@@ -81,8 +127,6 @@ function Contact() {
                     <div className=" lg:h-[350px] relative">
                         <EarthCanvas />
                     </div>
-
-                        
                 </div>
 
                 <div className="flex flex-col justify-evenly items-center h-full  w-1/2 ">

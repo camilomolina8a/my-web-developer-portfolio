@@ -21,7 +21,7 @@
 }
 
 body {
-    background-color: rgb(30, 30, 30);
+    background-color: #0F051D;
 }
 *,
 ::before,
@@ -142,6 +142,3 @@ a {
 }
 /*-----------------------------*/
 
-.tee{
-    text-shadow: 0 0 0.5rem #8800F4,0 0 0.125rem #2600fc;
-}

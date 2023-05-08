@@ -1,4 +1,4 @@
-import TextSphere from "../elements/TextSphere";
+import TextSphere from "./elements/TextSphere";
 import { toggleRubberBand } from "../helpers/toggleRubberBand";
 
 function About() {
@@ -9,7 +9,7 @@ function About() {
                     <TextSphere />
                 </div>
                 <div className="lg:w-1/2 flex justify-center flex-col items-start">
-                    <h2 className="text-[4rem] text-white font-rubik font-[700] prevent-select flex">
+                    <h2 className="text-[5rem] text-white font-rubik font-[700] prevent-select flex">
                         <br />
                         <span
                             className="letter "
