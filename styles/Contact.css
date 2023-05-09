@@ -6,16 +6,15 @@
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgb(255, 255, 255, 0.4);
+    border: 1px solid rgb(255, 255, 255, 0.3);
 
-    /* background: -webkit-linear-gradient(45deg, #151031 25.34%, #a7009927 100.78%); */
-    background-color: rgba(21, 16, 49, 0.8);
+    background-color: rgba(21, 16, 49, 1);
 }
 
 .form-container input,
 .form-container textarea {
     background-color: var(--bg-input);
-    color: rgba(255, 255, 255, 0.65);
+    color: rgba(255, 255, 255, 0.75);
     border-radius: 10px;
 }
 .form-container input:focus,

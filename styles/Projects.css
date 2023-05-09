@@ -1,0 +1,22 @@
+.project-card {
+    background-color: rgba(21, 16, 49, 0.6);
+    border: 1px solid rgba(255 255 255 /0.3);
+}
+
+.project-card button{
+    background-color: rgba(255 255 255 /0.05);
+    color: #741ff5;
+}
+
+.project-card button:hover{
+    /* background-color: rgba(21, 16, 49, 0.8); */
+    background-color: #741ff5;
+    color: white;
+}
+.right-arrow  {
+    transition: all 0.3s;
+}
+
+.project-card button:hover .right-arrow {
+    filter: brightness(0) invert(1);
+}

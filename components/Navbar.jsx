@@ -7,7 +7,7 @@ const Navbar = () => {
     const [toggle, setToggle] = useState(true);
 
     return (
-        <nav className="flex my-0 px-5 md:px-0 md:mx-auto md:h-[45px] justify-between items-center border-[1px] text-white w-[100%] md:w-[95%] lg:max-w-[1140px] lg:py-8">
+        <nav className="flex lg:mt-4 px-5 md:px-0 md:mx-auto md:h-[45px] justify-between items-center text-white w-[100%] md:w-[95%] lg:max-w-[1140px] lg:py-8">
             <div>
                 <h2 className="text-3xl text-white font-poppins">Camilo</h2>
             </div>
