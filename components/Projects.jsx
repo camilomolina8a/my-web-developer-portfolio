@@ -1,6 +1,9 @@
 import ProjectCard from "./elements/ProjectCard";
 import { toggleRubberBand } from "../helpers/toggleRubberBand";
 
+import { projects }  from "../constants/projects";
+
+
 function Projects() {
     return (
         <div className="flex flex-col  w-full lg:max-w-[1140px] m-auto mb-[130px]">
@@ -62,11 +65,23 @@ function Projects() {
                     o
                 </span>
             </h2>
-            <h3 className="text-white mx-auto font-rubik text-[1.4rem] mb-5 font-[600]">My Latest Projects</h3>
+            <h3 className="text-white mx-auto font-rubik text-[1.4rem] mb-5 font-[600]">
+                My Latest Projects
+            </h3>
             <div className=" flex justify-between w-full flex-wrap">
-                <ProjectCard />
-                <ProjectCard />
-                <ProjectCard />
+                 
+                {projects.length > 0 &&
+                    projects.map((project) => {
+                        return (
+                            <ProjectCard
+                                key={project.id}
+                                thumbnail={project.thumbnail}
+                                sizeThumbnail ={project.sizeThumbnail}
+                                backgroundColor={project.bgColorThumbnail}
+                                
+                            />
+                        );
+                    })}
             </div>
         </div>
     );
