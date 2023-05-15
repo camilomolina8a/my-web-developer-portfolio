@@ -7,7 +7,7 @@ const Navbar = () => {
     const [toggle, setToggle] = useState(true);
 
     return (
-        <nav className="flex lg:mt-4 px-5 md:px-0 md:mx-auto md:h-[45px] justify-between items-center text-white w-[100%] md:w-[95%] lg:max-w-[1140px] lg:py-8">
+        <nav className="flex lg:mt-4 px-5 py-5 md:px-0 md:mx-auto md:h-[45px] justify-between items-center text-white w-[100%] md:w-[95%] lg:max-w-[1140px] lg:py-8 ">
             <div>
                 <h2 className="text-3xl text-white font-poppins">Camilo</h2>
             </div>
@@ -58,6 +58,7 @@ const Navbar = () => {
                         width="28px"
                         alt="menu-icon"
                         onClick={() => setToggle(!toggle)}
+                        className="z-[99]"
                     />
                 ) : (
                     <Image
@@ -66,6 +67,7 @@ const Navbar = () => {
                         width="24px"
                         alt="menu-icon"
                         onClick={() => setToggle(!toggle)}
+                        className="z-[999]"
                     />
                 )}
             </div>
@@ -73,15 +75,20 @@ const Navbar = () => {
             <div
                 className={` ${
                     toggle
-                        ? "-translate-x-full menu-transition flex flex-col items-center justify-center"
-                        : "translate-x-0 menu-transition flex flex-col items-center justify-center"
-                } md:hidden absolute w-[70%] top-[38px] left-0 h-[calc(100%-38px)] bg-emerald-800`}
+                        ? "-translate-x-full menu-transition flex flex-col items-center justify-center "
+                        : "translate-x-0 menu-transition flex flex-col items-center justify-end"
+                } md:hidden fixed w-full top-0 left-0 h-full bg-emerald-800 z-[99] border`}
             >
-                <ul className="flex flex-col items-center justify-evenly border-[1px] w-full h-[90%]">
+                <div className="flex flex-col items-center justify-center h-[20%]">
+                    <h3 className=" font-rubik text-[3.8rem]">Camilo</h3>
+                    <p className="font-rubik text-[1.3rem]">Web Developer</p>
+                </div>
+
+                <ul className="flex flex-col items-center justify-evenly border w-full h-[75%]">
                     {navLinks.map((navlink, index) => (
                         <li
                             key={navlink.id}
-                            className="w-full flex justify-center text-3xl z-[999] mb-4 tracking-wide"
+                            className="w-full flex justify-center text-3xl z-[99] mb-4 tracking-wide"
                             onClick={() => setToggle(!toggle)}
                         >
                             <a href={`#${navlink.id}`}>{navlink.title}</a>

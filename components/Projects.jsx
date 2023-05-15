@@ -6,8 +6,9 @@ import { projects }  from "../constants/projects";
 
 function Projects() {
     return (
-        <div className="flex flex-col  w-full lg:max-w-[1140px] m-auto mb-[130px]">
-            <h2 className="text-[5.5rem] text-white font-rubik font-[700] prevent-select flex mb-3 mt-[80px]">
+        <div className="flex flex-col items-center w-full lg:max-w-[1140px] lg:mx-auto mb-[130px] px-5 lg:px-0">
+
+            <h2 className=" text-[4.5rem] lg:text-[5.5rem] text-white font-rubik font-[700] prevent-select flex mb-3 mt-[80px]">
                 <br />
 
                 <span
@@ -65,9 +66,11 @@ function Projects() {
                     o
                 </span>
             </h2>
+
             <h3 className="text-white mx-auto font-rubik text-[1.4rem] mb-5 font-[600]">
                 My Latest Projects
             </h3>
+
             <div className=" flex justify-between w-full flex-wrap">
                  
                 {projects.length > 0 &&
@@ -83,6 +86,7 @@ function Projects() {
                         );
                     })}
             </div>
+
         </div>
     );
 }

@@ -1,43 +1,53 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import TagCloud from "TagCloud";
 
-const texts = [
-    "HTML5",
-    "CSS3",
-    "TailwindCSS",
-    "Javascript",
-    "ReactJs",
-    "NextJs",
-    "Wordpress",
-    "Git",
-    "GitHub",
-    "ES5/ES6",
-];
-
-const container = ".tagcloud";
-
-const options = {
-    // sphere radius in px
-    radius: 250,
-
-    //animation speed: slow, normal, fast
-    maxSpeed: "normal",
-    initSpeed: "normal",
-
-    // rolling direction [0 (top), 90 (left), 135 (right-bottom) ]
-    direction: 135,
-
-    // interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse)]
-    keep: true,
-};
-
 const TextSphere = () => {
-    useEffect(() => {
+    const [radius, setRadius] = useState(180);
 
+    const texts = [
+        "HTML5",
+        "CSS3",
+        "TailwindCSS",
+        "Javascript",
+        "ReactJs",
+        "NextJs",
+        "Wordpress",
+        "Git",
+        "GitHub",
+        "ES5/ES6",
+    ];
+
+    const container = ".tagcloud";
+
+    const options = {
+        // sphere radius in px
+        radius: radius,
+
+        //animation speed: slow, normal, fast
+        maxSpeed: "normal",
+        initSpeed: "normal",
+
+        // rolling direction [0 (top), 90 (left), 135 (right-bottom) ]
+        direction: 135,
+
+        // interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse)]
+        keep: true,
+    };
+
+    useEffect(() => {
+        const handleResize = () => {
+            const screenWidth = window.innerWidth ; console.log(screenWidth);
+            const newRadius = Math.floor(window.innerWidth / 3); console.log(newRadius)
+            
+        };
+        handleResize();
+        window.addEventListener("resize", handleResize);
         return () => {
             TagCloud(container, texts, options);
+            window.removeEventListener("resize", handleResize);
         };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
@@ -48,3 +58,4 @@ const TextSphere = () => {
 };
 
 export default TextSphere;
+

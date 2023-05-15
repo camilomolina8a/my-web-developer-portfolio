@@ -3,13 +3,17 @@ import { toggleRubberBand } from "../helpers/toggleRubberBand";
 
 function About() {
     return (
-        <div className="max-w-[1140px] mx-auto">
-            <div className=" w-full h-[90vh] flex">
-                <div className="flex items-center lg:w-1/2">
+        <div className="w-full max-w-full lg:max-w-[1140px] mx-auto mt-[120px] lg:mt-0 px-5 lg:px-0">
+
+            <div className="w-full md:h-[90vh] flex flex-col-reverse lg:flex-row">
+
+                <div className="flex items-center w-full lg:w-1/2 mt-8 lg:mt-0">
                     <TextSphere />
                 </div>
-                <div className="lg:w-1/2 flex justify-center flex-col items-start">
-                    <h2 className="text-[5rem] text-white font-rubik font-[700] prevent-select flex">
+
+                <div className="w-full lg:w-1/2 flex justify-center flex-col items-start ">
+
+                    <h2 className="lg:text-[5rem] text-[3.8rem] text-white font-rubik font-[700] prevent-select flex">
                         <br />
                         <span
                             className="letter "
@@ -59,6 +63,7 @@ function About() {
                             e
                         </span>
                     </h2>
+
                     <p className="font-rubik font-[300] text-[1.1rem] text-gray-400 prevent-select">
                         I&apos;m a Freelancer Front-end Developer with over 3
                         years of experience. I&apos;m from San Francisco. I code
@@ -66,7 +71,9 @@ function About() {
                         world. I like work with new people. New people new
                         Experiences.
                     </p>
+
                     <br />
+
                     <p className="font-rubik font-[300] text-[1.1rem] text-gray-400 prevent-select">
                         I&apos;m a Freelancer Front-end Developer with over 3
                         years of experience. I&apos;m from San Francisco. I code
@@ -74,18 +81,24 @@ function About() {
                         world. I like work with new people. New people new
                         Experiences.
                     </p>
+
                     <br />
 
                     <p className="font-rubik font-[300] text-[1.1rem] text-gray-400 prevent-select">
                         Interested in the entire frontend spectrum and working
                         on ambitious projects with positive people
                     </p>
+
                     <br />
+
                     <a className="font-rubik font-[300] cursor-pointer link text-[1.1rem] prevent-select ">
                         Let&apos;s make something special!!!
                     </a>
+
                 </div>
+
             </div>
+
         </div>
     );
 }

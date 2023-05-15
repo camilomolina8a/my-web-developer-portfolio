@@ -69,10 +69,13 @@ function Contact() {
     };
 
     return (
-        <div className="mt-10 flex flex-col items-center relative lg:h-[100vh]">
-            <div className="flex h-full items-center lg:max-w-[1140px] w-full ">
-                <div className="flex h-full flex-col justify-center items-center w-1/2 ">
-                    <h2 className=" text-white font-rubik text-[5.8rem] prevent-select font-[600] text-center ">
+        <div className="flex flex-col items-center relative w-full mt-10 mb-[80px] px-5 lg:px-0 lg:h-[100vh] ">
+
+            <div className="flex flex-col lg:flex-row w-full h-full items-center lg:max-w-[1140px]  ">
+
+                <div className="flex h-full flex-col justify-center items-center w-full lg:w-1/2 mb-5 lg:mb-0">
+
+                    <h2 className=" text-white font-rubik text-[4.5rem] lg:text-[5.8rem] prevent-select font-[600] text-center ">
                         <span
                             className="letter"
                             onMouseEnter={toggleRubberBand}
@@ -117,7 +120,7 @@ function Contact() {
                         </span>
                     </h2>
 
-                    <p className=" text-gray-400 font-rubik text-[1.2rem] text-center lg:max-w-[550px] ">
+                    <p className=" text-gray-400 font-rubik text-[1.1rem] lg:text-[1.2rem] text-center lg:max-w-[550px] lg:my-0 my-3">
                         I&apos;m interested in freelance opportunities all
                         around the world. <br className="hidden lg:block" /> If
                         you have other request or question, fell free to contact
@@ -125,12 +128,15 @@ function Contact() {
                     </p>
 
                     <div className=" lg:h-[350px] relative">
-                        <EarthCanvas />
+                        {/* <EarthCanvas /> */}
                     </div>
+
                 </div>
 
-                <div className="flex flex-col justify-evenly items-center h-full  w-1/2 ">
-                    <div className="form-container w-3/4">
+                <div className="flex flex-col justify-evenly items-center h-full w-full lg:w-1/2  lg:mt-0">
+
+                    <div className="form-container w-full lg:w-3/4">
+
                         <h3 className="mb-3 text-white font-rubik font-[600] text-[2rem] prevent-select">
                             <span
                                 className="letter"
@@ -234,8 +240,10 @@ function Contact() {
                                 {loading ? "Sending..." : "Send"}
                             </button>
                         </form>
+
                     </div>
                 </div>
+
             </div>
 
             <StarsCanvas />

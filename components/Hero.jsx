@@ -1,11 +1,10 @@
 import { toggleRubberBand } from "../helpers/toggleRubberBand";
 
 const Hero = () => {
-    // Function to add and remove the bouncing class to each letter with it.
 
     return (
-        <div className="lg:max-w-[1140px] h-[calc(100vh-66px)] m-auto ">
-            <h1 className="text-[6rem] text-white leading-[6.8rem] font-rubik font-[700] prevent-select ">
+        <div className=" px-5 md:px-0 lg:max-w-[1140px] md:h-[calc(100vh-66px)] m-auto mt-5 lg:mt-0">
+            <h1 className=" text-[4rem] lg:text-[6rem] text-white  leading-0 md:leading-[6.8rem] font-rubik font-[700] prevent-select ">
                 <span
                     className="text-[2.2rem] letter"
                     onMouseEnter={(e) => toggleRubberBand(e)}
@@ -110,13 +109,13 @@ const Hero = () => {
                 </span>
             </h1>
 
-            <div className="flex flex-col text-[2.2rem] text-green font-rubik  h-[60px]">
+            <div className="flex flex-col text-[1.5rem] text-green font-rubik  h-[60px]">
                 <p className="item">Front End Developer</p>
                 <p className="item">React Native Developer</p>
                 <p className="item">Wordpress Developer</p>
             </div>
 
-            <p className="text-gray-400 text-[1.125rem] font-rubik font-[300] lg:max-w-[450px] mt-2">
+            <p className="text-gray-400 text-[1rem] font-rubik font-[300] lg:max-w-[450px] mt-[-5px] md:mt-2">
                 I design and develop services for customers of all sizes,
                 specializing in creating stylish, modern websites, web services
                 and online stores.

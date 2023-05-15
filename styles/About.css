@@ -1,10 +1,7 @@
 /* ------- Sphere ---- */
 .text-sphere {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    margin: 0 auto;
 }
 
 .tagcloud {
@@ -26,6 +23,12 @@
 }
 .tagcloud--item:hover {
     text-shadow: 0 0 0.06rem white,0 0 1rem #741ff5;
+}
+
+@media screen and (max-width:768px) {
+    .tagcloud--item {
+        font-size: 14px;
+    }
 }
 
 /* ----------- END Sphere ------------- */
