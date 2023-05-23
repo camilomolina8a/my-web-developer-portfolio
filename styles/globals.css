@@ -18,11 +18,13 @@
     --text-gradient-1: #2600fc;
     --text-gradient-2: #af40a6;
     --bg-input: #100d25;
+    --bg-body:#0F051D;
 }
 
 body {
-    background-color: #0F051D;
+    background-color: var(--bg-body);
 }
+
 *,
 ::before,
 ::after {
@@ -138,7 +140,15 @@ a {
 
 /*-- Para el menu responsive --*/
 .menu-transition {
-    transition: all 0.4s ease-out 0s;
+    transition: transform 0.4s ease-out 0s;
+}
+
+.logo {
+    background: -webkit-linear-gradient(25deg, #2600fc 2.34%, #9f2aff 100.78%); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
 }
 /*-----------------------------*/
 

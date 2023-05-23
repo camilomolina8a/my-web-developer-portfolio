@@ -3,9 +3,9 @@ import { toggleRubberBand } from "../helpers/toggleRubberBand";
 
 function About() {
     return (
-        <div className="w-full max-w-full lg:max-w-[1140px] mx-auto mt-[120px] lg:mt-0 px-5 lg:px-0">
+        <div className="w-full max-w-full lg:max-w-[1140px] mx-auto mt-[120px] md:mt-[150px] lg:mt-0 px-5 py-5 lg:py-0 lg:px-0" id="about">
 
-            <div className="w-full md:h-[90vh] flex flex-col-reverse lg:flex-row">
+            <div className="w-full lg:h-[90vh] flex flex-col-reverse lg:flex-row">
 
                 <div className="flex items-center w-full lg:w-1/2 mt-8 lg:mt-0">
                     <TextSphere />

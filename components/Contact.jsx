@@ -69,7 +69,7 @@ function Contact() {
     };
 
     return (
-        <div className="flex flex-col items-center relative w-full mt-10 mb-[80px] px-5 lg:px-0 lg:h-[100vh] ">
+        <div className="flex flex-col items-center relative w-full lg:mt-10 mb-[80px] px-5 lg:px-0 lg:h-[100vh] " id="contact">
 
             <div className="flex flex-col lg:flex-row w-full h-full items-center lg:max-w-[1140px]  ">
 
@@ -120,7 +120,7 @@ function Contact() {
                         </span>
                     </h2>
 
-                    <p className=" text-gray-400 font-rubik text-[1.1rem] lg:text-[1.2rem] text-center lg:max-w-[550px] lg:my-0 my-3">
+                    <p className=" text-gray-400 font-rubik text-[1.1rem] md:text-[1.2rem] text-center md:max-w-[550px] lg:my-0 my-3">
                         I&apos;m interested in freelance opportunities all
                         around the world. <br className="hidden lg:block" /> If
                         you have other request or question, fell free to contact

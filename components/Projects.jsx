@@ -6,9 +6,9 @@ import { projects }  from "../constants/projects";
 
 function Projects() {
     return (
-        <div className="flex flex-col items-center w-full lg:max-w-[1140px] lg:mx-auto mb-[130px] px-5 lg:px-0">
+        <div className="flex flex-col items-center w-full lg:max-w-[1140px] lg:mx-auto mb-[130px] px-5 lg:px-0" id="portfolio">
 
-            <h2 className=" text-[4.5rem] lg:text-[5.5rem] text-white font-rubik font-[700] prevent-select flex mb-3 mt-[80px]">
+            <h2 className=" text-[4.5rem] lg:text-[5.5rem] text-white font-rubik font-[700] prevent-select flex mb-3 lg:mt-[80px] mt-[40px]">
                 <br />
 
                 <span
@@ -71,7 +71,7 @@ function Projects() {
                 My Latest Projects
             </h3>
 
-            <div className=" flex justify-between w-full flex-wrap">
+            <div className=" flex justify-between md:justify-center md:gap-5 w-full flex-wrap">
                  
                 {projects.length > 0 &&
                     projects.map((project) => {
