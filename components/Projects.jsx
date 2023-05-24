@@ -81,7 +81,7 @@ function Projects() {
                                 thumbnail={project.thumbnail}
                                 sizeThumbnail ={project.sizeThumbnail}
                                 backgroundColor={project.bgColorThumbnail}
-                                
+                                fullImages = {project.fullImages}
                             />
                         );
                     })}

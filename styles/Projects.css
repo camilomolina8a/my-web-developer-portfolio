@@ -6,24 +6,36 @@
     transition: all 0.3s;
 }
 .project-card:hover {
-    box-shadow: 2px 2px 8px  #751ff546;
+    box-shadow: 2px 2px 8px #751ff546;
 }
 
-.project-card button{
-    background-color: rgba(255 255 255 /0.05);
+.project-card button {
+    background-color: #ffffff0d;
     color: #741ff5;
 }
 
-.project-card button:hover{
+.project-card button:hover {
     /* background-color: rgba(21, 16, 49, 0.8); */
     background-color: #741ff5;
     color: white;
 }
-.right-arrow  {
+.right-arrow {
     transition: all 0.3s;
 }
 
-.project-card button:hover .right-arrow {
+.project-card button:hover .right-arrow,a:hover .right-arrow {
     filter: brightness(0) invert(1);
 }
 /* END PROJECT CARD */
+
+.bg-popup {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.shadow {
+    box-shadow: 10px 8px 21px 0px rgba(0, 0, 0, 0.50);
+    -webkit-box-shadow: 10px 8px 21px 0px rgba(0, 0, 0, 0.50);
+    -moz-box-shadow: 10px 8px 21px 0px rgba(0, 0, 0, 0.50);
+}
+
+

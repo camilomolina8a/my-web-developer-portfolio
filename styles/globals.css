@@ -25,6 +25,16 @@ body {
     background-color: var(--bg-body);
 }
 
+html::-webkit-scrollbar,  *::-webkit-scrollbar {
+    width: 5px;
+}
+html::-webkit-scrollbar-thumb, *::-webkit-scrollbar-thumb {
+    background: #7100ce77;
+    border-radius: 10px;    
+}
+html::-webkit-scrollbar-thumb:hover,*::-webkit-scrollbar-thumb:hover {
+    background: #7100ce;}
+
 *,
 ::before,
 ::after {
@@ -68,7 +78,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
     letter-spacing: 0;
     line-height: 1.2;
     padding: 14px 24px;
@@ -78,7 +87,6 @@ a {
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
     white-space: nowrap;
-    color: white;
     overflow: hidden;
 }
 

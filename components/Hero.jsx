@@ -123,9 +123,9 @@ const Hero = () => {
 
             <a
                 href="#"
-                className="btn btn-gradient mt-6 w-[160px] text-[1.125rem] font-[600]"
+                className="btn btn-gradient text-white mt-6 w-[160px] font-rubik text-[1rem]"
             >
-                <span className="mt-[-4px]">Contact me</span>
+                <span>Contact me</span>
             </a>
 
             <div className="rn-gradient circle-1"></div>

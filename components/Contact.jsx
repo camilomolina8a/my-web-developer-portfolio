@@ -235,7 +235,7 @@ function Contact() {
 
                             <button
                                 type="submit"
-                                className="btn h-[40px] btn-gradient lg:max-w-[100px]"
+                                className="btn text-white h-[40px] btn-gradient lg:max-w-[100px]"
                             >
                                 {loading ? "Sending..." : "Send"}
                             </button>
