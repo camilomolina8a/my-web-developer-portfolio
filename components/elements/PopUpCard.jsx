@@ -1,11 +1,12 @@
 import Image from "next/image";
+import { useState } from "react";
 
 function PopUpCard({ setToggle, fullImages, website }) {
-    console.log(website);
-
     return (
         <div className="fixed flex items-center justify-center top-[0] right-0 w-[100vw] h-[100vh] bg-popup z-[999]">
-            <div className="flex flex-col items-center relative h-[70%] md:h-[90%] w-[90%] md:w-[70%] lg:w-[60%] border bg-[var(--bg-body)] rounded-[10px] shadow">
+            
+            <div className="flex flex-col items-center relative h-[80%] md:h-[70%] lg:h-[90%] w-[90%] md:w-[80%] lg:w-[60%] border bg-[var(--bg-body)] rounded-[10px] shadow">
+
                 <span className=" absolute top-5 right-5 cursor-pointer">
                     <Image
                         src="/images/close.svg"
@@ -16,7 +17,7 @@ function PopUpCard({ setToggle, fullImages, website }) {
                     />
                 </span>
 
-                <div className="flex items-start mt-[50px] md:mt-10 h-[400px] md:h-[400px] w-[90%] md:w-[85%] rounded-[10px] overflow-y-scroll ">
+                <div className="flex items-start mt-[50px] md:mt-10 h-[75%] md:h-[80%] lg:h-[400px] w-[90%] md:w-[85%] rounded-[10px] overflow-y-scroll ">
                     <Image
                         src={fullImages[0]}
                         width={800}

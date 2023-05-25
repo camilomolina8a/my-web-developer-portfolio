@@ -15,7 +15,6 @@
 }
 
 .project-card button:hover {
-    /* background-color: rgba(21, 16, 49, 0.8); */
     background-color: #741ff5;
     color: white;
 }
@@ -37,5 +36,3 @@
     -webkit-box-shadow: 10px 8px 21px 0px rgba(0, 0, 0, 0.50);
     -moz-box-shadow: 10px 8px 21px 0px rgba(0, 0, 0, 0.50);
 }
-
-
