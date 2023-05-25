@@ -120,10 +120,9 @@ function Contact() {
                         </span>
                     </h2>
 
-                    <p className=" text-gray-400 font-rubik text-[1.1rem] md:text-[1.2rem] text-center md:max-w-[550px] lg:my-0 my-3">
+                    <p className=" text-gray-400 font-rubik text-[1.1rem] md:text-[1.2rem] text-center md:max-w-[630px] lg:max-w-[480px] lg:my-0 my-3">
                         I&apos;m interested in freelance opportunities all
-                        around the world. <br className="hidden lg:block" /> If
-                        you have other request or question, fell free to contact
+                        around the world. <br className="hidden md:block lg:hidden" />If you have other request or question, fell free to contact
                         me.{" "}
                     </p>
 
@@ -133,7 +132,7 @@ function Contact() {
 
                 </div>
 
-                <div className="flex flex-col justify-evenly items-center h-full w-full lg:w-1/2  lg:mt-0">
+                <div className="flex flex-col justify-evenly items-center h-full w-full md:w-3/4 lg:w-1/2  lg:mt-0">
 
                     <div className="form-container w-full lg:w-3/4">
 
@@ -235,7 +234,7 @@ function Contact() {
 
                             <button
                                 type="submit"
-                                className="btn text-white h-[40px] btn-gradient lg:max-w-[100px]"
+                                className="btn text-white h-[50px] md:h-[40px] btn-gradient w-[50%] mx-auto md:mx-0 md:max-w-[110px]"
                             >
                                 {loading ? "Sending..." : "Send"}
                             </button>

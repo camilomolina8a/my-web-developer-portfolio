@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-function PopUpCard({ setToggle, fullImages }) {
-    console.log(fullImages);
+function PopUpCard({ setToggle, fullImages, website }) {
+    console.log(website);
 
     return (
         <div className="fixed flex items-center justify-center top-[0] right-0 w-[100vw] h-[100vh] bg-popup z-[999]">
@@ -28,7 +28,9 @@ function PopUpCard({ setToggle, fullImages }) {
 
                 <div className=" flex justify-center md:w-[85%] mt-8">
                     <a
-                        href="#"
+                        href={website}
+                        target="_blank"
+                        rel="noreferrer"
                         className=" bg-[#ffffff0d] btn md:w-[35%] text-[#741ff5] font-[600] font-rubik text-[1.1rem] hover:text-white hover:bg-[#741ff5]"
                     >
                         Go to website

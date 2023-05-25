@@ -50,7 +50,13 @@ function ProjectCard({
                 </span>
             </button>
 
-            {toggle && <DynamicImportPopUpCard setToggle={setToggle} fullImages={fullImages}/>}
+            {toggle && (
+                <DynamicImportPopUpCard
+                    setToggle={setToggle}
+                    fullImages={fullImages}
+                    website={websiteURL}
+                />
+            )}
         </div>
     );
 }

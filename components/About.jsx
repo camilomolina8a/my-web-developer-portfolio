@@ -7,7 +7,7 @@ function About() {
 
             <div className="w-full lg:h-[90vh] flex flex-col-reverse lg:flex-row">
 
-                <div className="flex items-center w-full lg:w-1/2 mt-8 lg:mt-0">
+                <div className="flex items-center w-full lg:w-1/2 mt-8 lg:mt-0 text-[1.1rem]">
                     <TextSphere />
                 </div>
 
