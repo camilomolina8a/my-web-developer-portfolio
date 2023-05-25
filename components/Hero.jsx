@@ -122,7 +122,7 @@ const Hero = () => {
             </p>
 
             <a
-                href="#"
+                href="#contact"
                 className="btn btn-gradient text-white mt-6 w-[160px] font-rubik text-[1rem]"
             >
                 <span>Contact me</span>

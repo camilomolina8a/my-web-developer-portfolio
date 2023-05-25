@@ -13,7 +13,7 @@ function About() {
 
                 <div className="w-full lg:w-1/2 flex justify-center flex-col items-start ">
 
-                    <h2 className="lg:text-[5rem] text-[3.8rem] text-white font-rubik font-[700] prevent-select flex">
+                    <h2 className="lg:text-[5.5rem] text-[4rem] text-white font-rubik font-[700] prevent-select flex">
                         <br />
                         <span
                             className="letter "
@@ -91,7 +91,7 @@ function About() {
 
                     <br />
 
-                    <a className="font-rubik font-[300] cursor-pointer link text-[1.1rem] prevent-select ">
+                    <a className="font-rubik font-[300] cursor-pointer link text-[1.1rem] prevent-select" href="#contact">
                         Let&apos;s make something special!!!
                     </a>
 

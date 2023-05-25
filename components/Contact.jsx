@@ -69,13 +69,13 @@ function Contact() {
     };
 
     return (
-        <div className="flex flex-col items-center relative w-full lg:mt-10 mb-[80px] px-5 lg:px-0 lg:h-[100vh] " id="contact">
-
+        <div
+            className="flex flex-col items-center relative w-full lg:mt-10 mb-[80px] px-5 lg:px-0 lg:h-[100vh] "
+            id="contact"
+        >
             <div className="flex flex-col lg:flex-row w-full h-full items-center lg:max-w-[1140px]  ">
-
                 <div className="flex h-full flex-col justify-center items-center w-full lg:w-1/2 mb-5 lg:mb-0">
-
-                    <h2 className=" text-white font-rubik text-[4.5rem] lg:text-[5.8rem] prevent-select font-[600] text-center ">
+                    <h2 className=" text-white font-rubik text-[4.5rem] lg:text-[5.5rem] prevent-select font-[600] text-center ">
                         <span
                             className="letter"
                             onMouseEnter={toggleRubberBand}
@@ -122,20 +122,19 @@ function Contact() {
 
                     <p className=" text-gray-400 font-rubik text-[1.1rem] md:text-[1.2rem] text-center md:max-w-[630px] lg:max-w-[480px] lg:my-0 my-3">
                         I&apos;m interested in freelance opportunities all
-                        around the world. <br className="hidden md:block lg:hidden" />If you have other request or question, fell free to contact
-                        me.{" "}
+                        around the world.{" "}
+                        <br className="hidden md:block lg:hidden" />
+                        If you have other request or question, fell free to
+                        contact me.{" "}
                     </p>
 
-                    <div className=" lg:h-[350px] relative">
-                        {/* <EarthCanvas /> */}
+                    <div className=" h-[250px] md:h-[350px] relative">
+                        <EarthCanvas />
                     </div>
-
                 </div>
 
                 <div className="flex flex-col justify-evenly items-center h-full w-full md:w-3/4 lg:w-1/2  lg:mt-0">
-
                     <div className="form-container w-full lg:w-3/4">
-
                         <h3 className="mb-3 text-white font-rubik font-[600] text-[2rem] prevent-select">
                             <span
                                 className="letter"
@@ -239,10 +238,8 @@ function Contact() {
                                 {loading ? "Sending..." : "Send"}
                             </button>
                         </form>
-
                     </div>
                 </div>
-
             </div>
 
             <StarsCanvas />
