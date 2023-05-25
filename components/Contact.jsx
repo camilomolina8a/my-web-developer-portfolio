@@ -27,11 +27,12 @@ function Contact() {
 
         emailjs
             .send(
+                //service ID
+                "service_dqpwmmn",
+                
                 //template ID
                 "template_bo6cf3o",
 
-                //service ID
-                "service_dqpwmmn",
                 {
                     from_name: form.name,
                     to_name: "Camilo",
@@ -202,7 +203,7 @@ function Contact() {
 
                         <form
                             autoComplete="off"
-                            handleSubmit={handleSubmit}
+                            onSubmit={(e) => handleSubmit(e)}
                             className="flex flex-col gap-8"
                         >
                             <input
@@ -231,10 +232,7 @@ function Contact() {
                                 onChange={(e) => handleChange(e)}
                             ></textarea>
 
-                            <button
-                                type="submit"
-                                className="btn text-white h-[50px] md:h-[40px] btn-gradient w-[50%] mx-auto md:mx-0 md:max-w-[110px]"
-                            >
+                            <button className="btn text-white h-[50px] md:h-[40px] btn-gradient w-[50%] mx-auto md:mx-0 md:max-w-[110px]">
                                 {loading ? "Sending..." : "Send"}
                             </button>
                         </form>
