@@ -10,8 +10,8 @@ function About() {
                 className="w-full max-w-full lg:max-w-[1140px] mx-auto mt-[120px] md:mt-[150px] lg:mt-0 px-5 py-5 lg:py-0 lg:px-0"
                 id="about"
             >
-                <div className="w-full lg:h-[90vh] flex flex-col-reverse lg:flex-row">
-                    <div className="flex items-center w-full lg:w-1/2 mt-8 lg:mt-0 text-[1.1rem] ">
+                <div className="w-full lg:h-[90vh] flex flex-col-reverse lg:flex-row ">
+                    <div className="flex justify-center items-center w-full lg:w-1/2 mt-8 lg:mt-0 md:ml-0">
                         <TextSphere />
                     </div>
 
@@ -67,7 +67,7 @@ function About() {
                             </span>
                         </h2>
 
-                        <p className="font-rubik font-[300] text-[1.1rem] text-gray-400 prevent-select">
+                        <p className="font-rubik font-[300] text-[1rem] md:text-[1.1rem] text-gray-400 prevent-select">
                             I&apos;m a Freelancer Front-end Developer with over
                             3 years of experience. I&apos;m from San Francisco.
                             I code and create web elements for amazing people
@@ -77,7 +77,7 @@ function About() {
 
                         <br />
 
-                        <p className="font-rubik font-[300] text-[1.1rem] text-gray-400 prevent-select">
+                        <p className="font-rubik font-[300] text-[1rem] md:text-[1.1rem] text-gray-400 prevent-select">
                             I&apos;m a Freelancer Front-end Developer with over
                             3 years of experience. I&apos;m from San Francisco.
                             I code and create web elements for amazing people
@@ -87,7 +87,7 @@ function About() {
 
                         <br />
 
-                        <p className="font-rubik font-[300] text-[1.1rem] text-gray-400 prevent-select">
+                        <p className="font-rubik font-[300] text-[1rem] md:text-[1.1rem] text-gray-400 prevent-select">
                             Interested in the entire frontend spectrum and
                             working on ambitious projects with positive people
                         </p>

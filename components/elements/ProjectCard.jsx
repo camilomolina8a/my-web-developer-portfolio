@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 
 const DynamicImportPopUpCard = dynamic(() => import("../elements/PopUpCard"), {
     ssr: false,
-    loading: () => <p>I am fetching</p>,
+    // loading: () => <p>I am fetching</p>,
 });
 
 function ProjectCard({

@@ -31,17 +31,15 @@ const Navbar = () => {
                 </ul>
             </div>
 
-            {/*  //!Reemplazar la imagen de descarga por mi CV */}
-
-            <div className=" lg:w-[12%] lg:flex lg:justify-end">
+            <div className="w-[40%] md:w-[18%] lg:w-[12%] lg:flex lg:justify-end ">
                 <a
-                    download="My CV"
-                    href="images/cv.jpg"
-                    className={`md:flex hidden btn btn-gradient h-[43px] text-base font-rubik `}
+                    download="CV_Camilo_Molina.pdf"
+                    href="/images/CV_Camilo_Molina_en.pdf"
+                    className={`md:flex hidden btn btn-gradient md:h-[43px] h-[38px] w-[115px] md:w-auto text-[14px] md:text-[1rem] font-rubik `}
                 >
-                    <span>Resume</span>
+                    <span >Resume</span>
 
-                    <span className="ml-2">
+                    <span className="ml-[4px] md:ml-2 md:h-auto">
                         <Image
                             src="/images/download-icon.png"
                             height="12px"
@@ -55,7 +53,7 @@ const Navbar = () => {
             {/* ------------ Mobile and tablet menu ------------ */}
 
             <div
-                className={`block md:hidden w-[28px] h-[28px]${
+                className={`flex md:hidden w-[28px] h-[28px]${
                     !toggle ? "relative mt-[3px] left-[5px]" : "mt-0"
                 }`}
             >
@@ -86,22 +84,24 @@ const Navbar = () => {
                         className="z-[999]"
                     />
                 </div>
-                <div className="flex flex-col items-center justify-end h-[25%] border-b border-b-gray-500 w-3/4 pb-3">
+
+                <div className="flex flex-col items-center justify-end h-[30%] border-b border-b-gray-500 w-[55%] pb-2">
                     <h3 className=" font-rubik text-[3.8rem] logo">Camilo</h3>
                     <p className="font-rubik text-[1.3rem]">Web Developer</p>
                 </div>
 
-                <ul className="flex flex-col items-center justify-evenly w-full h-[75%]">
+                <ul className="flex flex-col items-center justify-evenly w-full h-[70%]">
                     {navLinks.map((navlink, index) => (
                         <li
                             key={navlink.id}
-                            className="w-full flex justify-center text-[35px] z-[99] mb-4 tracking-wide"
+                            className="w-full flex justify-center text-[30px] z-[99] mb-4 tracking-wide"
                             onClick={() => setToggle(!toggle)}
                         >
                             <a href={`#${navlink.id}`}>{navlink.title}</a>
                         </li>
                     ))}
                 </ul>
+
             </div>
         </nav>
     );

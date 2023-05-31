@@ -76,7 +76,7 @@ function Contact() {
         >
             <div className="flex flex-col lg:flex-row w-full h-full items-center lg:max-w-[1140px]  ">
                 <div className="flex h-full flex-col justify-center items-center w-full lg:w-1/2 mb-5 lg:mb-0">
-                    <h2 className=" text-white font-rubik text-[4.5rem] lg:text-[5.5rem] prevent-select font-[600] text-center ">
+                    <h2 className=" text-white font-rubik text-[4rem] lg:text-[5.5rem] prevent-select font-[600] text-center ">
                         <span
                             className="letter"
                             onMouseEnter={toggleRubberBand}
@@ -121,7 +121,7 @@ function Contact() {
                         </span>
                     </h2>
 
-                    <p className=" text-gray-400 font-rubik text-[1.1rem] md:text-[1.2rem] text-center md:max-w-[630px] lg:max-w-[480px] lg:my-0 my-3">
+                    <p className=" text-gray-400 font-rubik text-[1rem] md:text-[1.2rem] text-center md:max-w-[630px] lg:max-w-[480px] lg:my-0 my-3">
                         I&apos;m interested in freelance opportunities all
                         around the world.{" "}
                         <br className="hidden md:block lg:hidden" />
