@@ -43,9 +43,11 @@ const TextSphere = () => {
         };
         handleResize();
         window.addEventListener("resize", handleResize);
+        console.log("deberia mostrarse la esfera");
         return () => {
             TagCloud(container, texts, options);
             window.removeEventListener("resize", handleResize);
+            console.log("deberia mostrarse la esfera RETURN del USEEFECT");
         };
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
