@@ -46,10 +46,9 @@ const TextSphere = () => {
 
         handleResize();
         console.log('Hola desde mi web 1')
-        
+        TagCloud(container, texts, options);
     
       return () => {
-        TagCloud(container, texts, options);
         console.log('Hola desde mi web 2')
       }
     }, [])
