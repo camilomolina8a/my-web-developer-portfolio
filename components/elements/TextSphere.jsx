@@ -45,10 +45,12 @@ const TextSphere = () => {
     useEffect(() => {
 
         handleResize();
+        console.log('Hola desde mi web 1')
         
     
       return () => {
         TagCloud(container, texts, options);
+        console.log('Hola desde mi web 2')
       }
     }, [])
     
