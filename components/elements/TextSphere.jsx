@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import TagCloud from "TagCloud";
 
 const TextSphere = () => {
-    const [radius, setRadius] = useState(180);
 
     const texts = [
         "HTML5",
@@ -20,6 +19,8 @@ const TextSphere = () => {
 
     const container = ".tagcloud";
 
+    let radius = 180;
+
     const options = {
         // sphere radius in px
         radius: radius,
@@ -35,22 +36,27 @@ const TextSphere = () => {
         keep: true,
     };
 
+    const handleResize = () => {
+        const newRadius = Math.floor(window.innerWidth / 3);
+        radius = newRadius;
+    };
+
+
     useEffect(() => {
-        const handleResize = () => {
-            const screenWidth = window.innerWidth ; console.log(screenWidth);
-            const newRadius = Math.floor(window.innerWidth / 3); console.log(newRadius)
-            
-        };
+
         handleResize();
-        window.addEventListener("resize", handleResize);
-        console.log("deberia mostrarse la esfera");
-        return () => {
-            TagCloud(container, texts, options);
-            window.removeEventListener("resize", handleResize);
-            console.log("deberia mostrarse la esfera RETURN del USEEFECT");
-        };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+        
+    
+      return () => {
+        TagCloud(container, texts, options);
+      }
+    }, [])
+    
+
+
+            
+    
+
 
     return (
         <div className="text-sphere">
@@ -60,4 +66,3 @@ const TextSphere = () => {
 };
 
 export default TextSphere;
-
