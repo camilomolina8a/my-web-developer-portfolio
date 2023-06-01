@@ -6,7 +6,7 @@ import radientCircle from "../public/images/gradient-circle.svg";
 
 const Hero = () => {
     return (
-        <div className=" px-5 md:px-5 lg:px-0 lg:max-w-[1140px] lg:h-[calc(100vh-66px)] m-auto mt-5 lg:mt-0">
+        <div className=" px-5 md:px-5 lg:px-0 lg:max-w-[1140px] lg:h-[calc(100vh-66px)] m-auto mt-[80px]">
             <h1 className=" text-[3rem] lg:text-[6rem] text-white  leading-0 md:leading-[6.8rem] font-rubik font-[700] prevent-select ">
                 <span
                     className="text-[2rem] md:text-[2.2rem] letter"
@@ -112,10 +112,10 @@ const Hero = () => {
                 </span>
             </h1>
 
-            <div className="flex flex-col text-[1.5rem] md:text-[2rem] text-green font-rubik  h-[60px]">
-                <p className="item">Front End Developer</p>
-                <p className="item">React Native Developer</p>
-                <p className="item">Wordpress Developer</p>
+            <div className="flex flex-col text-[1.5rem] md:text-[2rem] text-green font-rubik h-[60px]">
+                <p className="item z-[-1]">Front End Developer</p>
+                <p className="item z-[-1]">React Native Developer</p>
+                <p className="item z-[-1]">Wordpress Developer</p>
             </div>
 
             <p className="text-gray-400 text-[1rem] md:text-[1.1rem] font-rubik font-[300] max-w-[320px] md:max-w-[500px] mt-[-5px] md:mt-[-4px]">
@@ -126,7 +126,7 @@ const Hero = () => {
 
             <a
                 href="#contact"
-                className="btn btn-gradient text-white mt-6 w-[140px] h-[45px] md:h-auto md:w-[160px] font-rubik text-[1rem]"
+                className="btn btn-gradient text-white mt-6 w-[140px] h-[45px] md:h-auto md:w-[160px] font-rubik text-[1rem] z-[-1]"
             >
                 <span>Contact me</span>
             </a>
