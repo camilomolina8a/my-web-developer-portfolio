@@ -4,14 +4,13 @@
     text-shadow: 2px 2px 7px #0a0a0a;
 }
 .letter:hover {
-    background: -webkit-linear-gradient(25deg, #2600fc 2.34%, #ff00ea 100.78%); 
+    background: -webkit-linear-gradient(25deg, #2600fc 2.34%, #ff00ea 100.78%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: none;
 }
 /* Bounce letter animation */
-
 .bouncing {
     animation: rubberBand 800ms alternate ease-out;
 }
@@ -45,7 +44,7 @@
 .item {
     position: absolute;
     animation: roll 9s ease-in-out 1s infinite backwards;
-    background: -webkit-linear-gradient(25deg, #2600fc 2.34%, #ff00ea 100.78%); 
+    background: -webkit-linear-gradient(25deg, #2600fc 2.34%, #ff00ea 100.78%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -86,28 +85,37 @@
 }
 
 /* ----------- END Profession animation--------------- */
-.rn-gradient {
+
+/* background gradient circles */
+.circles-container {
     position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    mix-blend-mode:soft-light;
     z-index: -1;
-    width: 500px;
-    height: 500px;
-    border-radius: 1000px;
-    -webkit-filter: blur(100px);
-    filter: blur(100px);
 }
 
-.circle-1 {
-    left: -180px;
-    top: -200px;
-    bottom: auto;
-    opacity: 0.2;
-    background: -webkit-linear-gradient(25deg, #2600fc, #ff00ea);
+.circles-container div span {
+    overflow: visible !important;
 }
 
-.circle-2 {
-    right: -260px;
-    bottom: -250px;
-    opacity: 0.15;
-    background: -webkit-linear-gradient(25deg, cyan, #ff00ea);
+.gradient-circle {
+    position: absolute; 
+    width: 100% !important; 
+    height: 100% !important;
+    -webkit-filter: blur(80px);
+    filter: blur(85px);
 }
+
+.gradient-circle.one {
+    top: -20% !important; 
+    left: -20% !important; 
+}
+.gradient-circle.two {
+    bottom: 80% !important; 
+    left: 290% !important; 
+}
+/* end background gradient circles */
 

@@ -1,7 +1,10 @@
+import Image from "next/image";
+
 import { toggleRubberBand } from "../helpers/toggleRubberBand";
 
-const Hero = () => {
+import radientCircle from "../public/images/gradient-circle.svg";
 
+const Hero = () => {
     return (
         <div className=" px-5 md:px-5 lg:px-0 lg:max-w-[1140px] lg:h-[calc(100vh-66px)] m-auto mt-5 lg:mt-0">
             <h1 className=" text-[3rem] lg:text-[6rem] text-white  leading-0 md:leading-[6.8rem] font-rubik font-[700] prevent-select ">
@@ -128,9 +131,24 @@ const Hero = () => {
                 <span>Contact me</span>
             </a>
 
-            <div className="rn-gradient circle-1"></div>
-            <div className="rn-gradient circle-2"></div>
-
+            <div className="circles-container">
+                <div className=" relative h-[250px] w-[250px] lg:h-[400px] lg:w-[400px]  ">
+                    <Image
+                        src={radientCircle}
+                        alt="gradient circle"
+                        layout="fill"
+                        className="gradient-circle one"
+                    />
+                </div>
+                <div className="relative h-[250px] w-[250px] lg:h-[350px] lg:w-[350px] ">
+                    <Image
+                        src={radientCircle}
+                        alt="gradient circle"
+                        layout="fill"
+                        className="gradient-circle two"
+                    />
+                </div>
+            </div>
         </div>
     );
 };
