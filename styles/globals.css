@@ -18,22 +18,26 @@
     --text-gradient-1: #2600fc;
     --text-gradient-2: #af40a6;
     --bg-input: #100d25;
-    --bg-body:#0F051D;
+    --bg-body: #0f051d;
 }
 
 body {
     background-color: var(--bg-body);
 }
 
-html::-webkit-scrollbar,  *::-webkit-scrollbar {
+html::-webkit-scrollbar,
+*::-webkit-scrollbar {
     width: 5px;
 }
-html::-webkit-scrollbar-thumb, *::-webkit-scrollbar-thumb {
+html::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
     background: #7100ce77;
-    border-radius: 10px;    
+    border-radius: 10px;
 }
-html::-webkit-scrollbar-thumb:hover,*::-webkit-scrollbar-thumb:hover {
-    background: #7100ce;}
+html::-webkit-scrollbar-thumb:hover,
+*::-webkit-scrollbar-thumb:hover {
+    background: #7100ce;
+}
 
 *,
 ::before,
@@ -98,11 +102,11 @@ a {
 .btn-gradient::after {
     content: "";
     position: absolute;
-    -webkit-border-radius:20px;
-    -moz-border-radius:20px;
-    -o-border-radius:20px;
-    -ms-border-radius:20px;
-    border-radius:20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px;
     left: 0;
     top: 0;
     width: 100%;
@@ -110,7 +114,7 @@ a {
     opacity: 0.9;
     z-index: -1;
     transition: all 0.3s;
-    background: -webkit-linear-gradient(25deg, #2600fc 2.34%, #ff00ea 120.78%); 
+    background: -webkit-linear-gradient(25deg, #2600fc 2.34%, #ff00ea 120.78%);
 }
 
 .btn-gradient:hover::after {
@@ -118,8 +122,8 @@ a {
 }
 
 .btn-gradient:hover {
-    text-shadow: 0 0 0.5rem #8800F4,0 0 0.125rem #2600fc;
-    box-shadow: inset 0 0 2rem 0 #ff00ea, 0 0 0.6rem 0 #8800F4;
+    text-shadow: 0 0 0.5rem #8800f4, 0 0 0.125rem #2600fc;
+    box-shadow: inset 0 0 2rem 0 #ff00ea, 0 0 0.6rem 0 #8800f4;
 }
 /* ------------------------------------------------------*/
 
@@ -151,8 +155,11 @@ a {
     transition: transform 0.4s ease-out 0s;
 }
 
+.nav-logo {
+    text-shadow: 2px 2px 7px #0a0a0a;
+}
 .logo {
-    background: -webkit-linear-gradient(25deg, #2600fc 2.34%, #9f2aff 100.78%); 
+    background: -webkit-linear-gradient(25deg, #2600fc 2.34%, #9f2aff 100.78%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -160,4 +167,3 @@ a {
     background-color: #10051db0;
 }
 /*-----------------------------*/
-

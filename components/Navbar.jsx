@@ -34,14 +34,15 @@ const Navbar = () => {
             className={`${changeNavbar ? "bg-[#10051de7] " : "bg-none"} ease-in duration-300 flex h-[55px] md:h-[66px] w-full fixed top-0 right-0 left-0 z-[99]`}
         >
             <nav
-                className="  flex px-5  md:mt-0 md:px-0 md:mx-auto md:h-[45px] justify-between items-center text-white w-[100%] md:w-[95%] lg:max-w-[1140px] md:py-8 "
+                className="flex px-5 md:mt-0 md:px-0 md:mx-auto md:h-[45px] justify-between items-center text-white w-[100%] md:w-[95%] lg:max-w-[1140px] md:py-8 "
                 id="home"
             >
-                <div className="hidden md:block">
-                    <h2 className="font-rubik lg:text-[25px] font-[600] prevent-select">
+                <div className="hidden md:block md:mt-1">
+                    <h2 className="nav-logo font-rubik lg:text-[25px] font-[600] prevent-select">
                         CAMILO
                     </h2>
                 </div>
+
                 <div className="hidden md:flex lg:justify-center">
                     <ul className="hidden md:flex justify-between h-full ">
                         {navLinks.map((navlink, index) => (
@@ -135,6 +136,7 @@ const Navbar = () => {
                     </ul>
                 </div>
             </nav>
+            
         </header>
     );
 };

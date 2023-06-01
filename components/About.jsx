@@ -15,9 +15,8 @@ function About() {
                         <TextSphere />
                     </div>
 
-                    <div className="w-full lg:w-1/2 flex justify-center flex-col items-start ">
+                    <div className="w-full lg:w-1/2 lg:max-w-[560px] flex justify-center flex-col items-start ">
                         <h2 className="lg:text-[5.5rem] text-[4rem] text-white font-rubik font-[700] prevent-select flex">
-                            <br />
                             <span
                                 className="letter "
                                 onMouseEnter={(e) => toggleRubberBand(e)}
@@ -67,35 +66,36 @@ function About() {
                             </span>
                         </h2>
 
-                        <p className="font-rubik font-[300] text-[1rem] md:text-[1.1rem] text-gray-400 prevent-select">
+                        <p className="font-rubik font-[300] text-[1rem] md:text-[1.1rem] text-gray-400">
                             I&apos;m a Freelancer Front-end Developer with over
-                            3 years of experience. I&apos;m from San Francisco.
-                            I code and create web elements for amazing people
-                            around the world. I like work with new people. New
-                            people new Experiences.
+                            2 years of experience. I&apos;m from Ecuador. I code
+                            and create web elements for amazing people around
+                            the world. I like work with new people. New people
+                            new Experiences.
                         </p>
 
                         <br />
 
-                        <p className="font-rubik font-[300] text-[1rem] md:text-[1.1rem] text-gray-400 prevent-select">
-                            I&apos;m a Freelancer Front-end Developer with over
-                            3 years of experience. I&apos;m from San Francisco.
-                            I code and create web elements for amazing people
-                            around the world. I like work with new people. New
-                            people new Experiences.
+                        <p className="font-rubik font-[300] text-[1rem] md:text-[1.1rem] text-gray-400 ">
+                            My technical skill in web development extends beyond
+                            programming languages and technologies, as I have
+                            also developed skills in project management,
+                            teamwork, and effective communication with clients
+                            and co-workers.
                         </p>
 
                         <br />
 
-                        <p className="font-rubik font-[300] text-[1rem] md:text-[1.1rem] text-gray-400 prevent-select">
-                            Interested in the entire frontend spectrum and
-                            working on ambitious projects with positive people
+                        <p className="font-rubik font-[300] text-[1rem] md:text-[1.1rem] text-gray-400">
+                            Interested in the whole spectrum of frontend
+                            development and ambitious projects with positive
+                            people.
                         </p>
 
                         <br />
 
                         <a
-                            className="font-rubik font-[300] cursor-pointer link text-[1.1rem] prevent-select"
+                            className="font-rubik font-[300] cursor-pointer link text-[1.1rem]"
                             href="#contact"
                         >
                             Let&apos;s make something special!!!
