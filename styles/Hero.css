@@ -112,10 +112,12 @@
 .gradient-circle.one {
     top: -20% !important; 
     left: -20% !important; 
+    opacity: 0.55;
 }
 .gradient-circle.two {
     bottom: 80% !important; 
-    left: 290% !important; 
+    left: 290% !important;
+    opacity: 0.55; 
 }
 /* end background gradient circles */
 

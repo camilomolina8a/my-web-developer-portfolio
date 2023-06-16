@@ -1,21 +1,47 @@
+import { useEffect } from "react";
+
 import TextSphere from "./elements/TextSphere";
 import { toggleRubberBand } from "../helpers/toggleRubberBand";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import Divider from "../components/elements/Divider";
 
 function About() {
+    useEffect(() => {
+        AOS.init({});
+    }, []);
+
     return (
         <>
+            <div
+                data-aos="zoom-in"
+                className=" mt-[100px] mb-[-50px] md:mb-[-80px] md:mt-[100px] lg:mt-0 lg:mb-[90px]"
+            >
+                <Divider />
+            </div>
+
             <div
                 className="w-full max-w-full lg:max-w-[1140px] mx-auto mt-[120px] md:mt-[150px] lg:mt-0 px-5 py-5 lg:py-0 lg:px-0"
                 id="about"
             >
                 <div className="w-full lg:h-[90vh] flex flex-col-reverse lg:flex-row ">
-                    <div className="flex justify-center items-center w-full lg:w-1/2 mt-8 lg:mt-0 md:ml-0">
+                    <div
+                        data-aos="fade-right"
+                        data-aos-delay="200"
+                        data-aos-duration="900"
+                        className="flex justify-center items-center w-full lg:w-1/2 mt-8 lg:mt-0 md:ml-0"
+                    >
                         <TextSphere />
                     </div>
 
-                    <div className="w-full lg:w-1/2 lg:max-w-[560px] flex justify-center flex-col items-start ">
+                    <div
+                        data-aos="fade-left"
+                        data-aos-delay="200"
+                        data-aos-duration="900"
+                        className="w-full lg:w-1/2 lg:max-w-[560px] flex justify-center flex-col items-start "
+                    >
                         <h2 className="lg:text-[5.5rem] text-[4rem] text-white font-rubik font-[700] prevent-select flex">
                             <span
                                 className="letter "
@@ -104,7 +130,10 @@ function About() {
                 </div>
             </div>
 
-            <div className="mt-[60px] md:mt-[90px] mb-[50px] md:mb-[50px] lg:mb-0">
+            <div
+                data-aos="zoom-in"
+                className="mt-[60px] md:mt-[90px] mb-[50px] md:mb-[50px] lg:mb-0"
+            >
                 <Divider />
             </div>
         </>

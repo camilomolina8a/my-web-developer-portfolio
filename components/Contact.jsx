@@ -29,7 +29,7 @@ function Contact() {
             .send(
                 //service ID
                 "service_dqpwmmn",
-                
+
                 //template ID
                 "template_bo6cf3o",
 
@@ -75,7 +75,11 @@ function Contact() {
             id="contact"
         >
             <div className="flex flex-col lg:flex-row w-full h-full items-center lg:max-w-[1140px]  ">
-                <div className="flex h-full flex-col justify-center items-center w-full lg:w-1/2 mb-5 lg:mb-0">
+                <div
+                    data-aos="fade-right"
+                    data-aos-duration="900"
+                    className="flex h-full flex-col justify-center items-center w-full lg:w-1/2 mb-5 lg:mb-0"
+                >
                     <h2 className=" text-white font-rubik text-[4rem] lg:text-[5.5rem] prevent-select font-[600] text-center ">
                         <span
                             className="letter"
@@ -134,7 +138,11 @@ function Contact() {
                     </div>
                 </div>
 
-                <div className="flex flex-col justify-evenly items-center h-full w-full md:w-3/4 lg:w-1/2  lg:mt-0">
+                <div
+                    data-aos="fade-left"
+                    data-aos-duration="900"
+                    className="flex flex-col justify-evenly items-center h-full w-full md:w-3/4 lg:w-1/2  lg:mt-0"
+                >
                     <div className="form-container w-full lg:w-3/4">
                         <h3 className="mb-3 text-white font-rubik font-[600] text-[2rem] prevent-select">
                             <span

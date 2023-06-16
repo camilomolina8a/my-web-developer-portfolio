@@ -63,7 +63,7 @@ const Navbar = () => {
                 <div className="w-[40%] md:w-[18%] lg:w-[12%] lg:flex lg:justify-end ">
                     <a
                         download="CV_Camilo_Molina.pdf"
-                        href="/images/CV_Camilo_Molina_en.pdf"
+                        href="/images/CV_Camilo Molina_eng.pdf"
                         className={`md:flex hidden btn btn-gradient md:h-[43px] h-[38px] w-[115px] md:w-auto text-[14px] md:text-[1rem] font-rubik `}
                     >
                         <span>Resume</span>

@@ -18,7 +18,7 @@ function ProjectCard({
     const [toggle, setToggle] = useState(false);
 
     return (
-        <div className="flex flex-col w-full md:w-[48%] lg:w-[32%] mb-5 md:mb-0 p-5 project-card rounded-[20px]">
+        <>
             <div
                 className={`flex items-center justify-center w-full h-[220px] mb-5 rounded-[20px]`}
                 style={{ backgroundColor: `${backgroundColor}` }}
@@ -57,7 +57,7 @@ function ProjectCard({
                     website={websiteURL}
                 />
             )}
-        </div>
+        </>
     );
 }
 
