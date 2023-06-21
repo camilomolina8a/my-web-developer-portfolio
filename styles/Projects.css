@@ -1,9 +1,7 @@
 /* PROJECT CARD */
+
 .project-card {
-    /* background-color: rgba(21, 16, 49, 0.6); */
     background-color: rgba(255, 255, 255, 0.05);
-    /* border: 1px solid rgba(255 255 255 /0.3); */
-    /* border: 1px solid rgb(255, 255, 255, 0.3); */
     transition: all 0.3s;
 }
 .project-card:hover {
@@ -20,7 +18,7 @@
     color: white;
 }
 .right-arrow {
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
 
 .project-card button:hover .right-arrow,a:hover .right-arrow {
@@ -37,3 +35,5 @@
     -webkit-box-shadow: 10px 8px 21px 0px rgba(0, 0, 0, 0.50);
     -moz-box-shadow: 10px 8px 21px 0px rgba(0, 0, 0, 0.50);
 }
+
+    

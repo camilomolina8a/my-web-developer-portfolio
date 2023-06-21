@@ -1,21 +1,22 @@
-import { useState } from "react";
 import Image from "next/image";
-import dynamic from "next/dynamic";
 
-const DynamicImportPopUpCard = dynamic(() => import("../elements/PopUpCard"), {
-    ssr: false,
-    // loading: () => <p>I am fetching</p>,
-});
 
 function ProjectCard({
-    id,
+    setToggle,
     thumbnail,
     sizeThumbnail,
     backgroundColor,
     fullImages,
     websiteURL,
+    setCurrentWebsiteURL,
+    setCurrentFullImages
 }) {
-    const [toggle, setToggle] = useState(false);
+    
+    function handleClick() {
+        setToggle((prev) => !prev);
+        setCurrentWebsiteURL(websiteURL);
+        setCurrentFullImages(fullImages[0]);
+    }
 
     return (
         <>
@@ -36,7 +37,7 @@ function ProjectCard({
 
             <button
                 className="mx-auto btn font-rubik font-[600] w-[90%]"
-                onClick={() => setToggle((prev) => !prev)}
+                onClick={()=>handleClick()} 
             >
                 View more
                 <span className="ml-[5px] pt-[2px] flex items-center ">
@@ -50,13 +51,6 @@ function ProjectCard({
                 </span>
             </button>
 
-            {toggle && (
-                <DynamicImportPopUpCard
-                    setToggle={setToggle}
-                    fullImages={fullImages}
-                    website={websiteURL}
-                />
-            )}
         </>
     );
 }

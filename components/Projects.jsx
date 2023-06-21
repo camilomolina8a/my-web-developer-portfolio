@@ -1,10 +1,25 @@
+import dynamic from "next/dynamic";
+import { useState } from "react";
+
 import ProjectCard from "./elements/ProjectCard";
 import { toggleRubberBand } from "../helpers/toggleRubberBand";
 import Divider from "./elements/Divider";
 
 import { projects } from "../constants/projects";
 
+const DynamicImportPopUpCard = dynamic(
+    () => import("../components/elements/PopUpCard"),
+    {
+        ssr: false,
+        // loading: () => <p>I am fetching</p>,
+    }
+);
+
 function Projects() {
+    const [toggle, setToggle] = useState(false);
+    const [currentFullImages, setCurrentFullImages] = useState("");
+    const [currentWebsiteURL, setCurrentWebsiteURL] = useState("");
+
     return (
         <>
             <div className="flex flex-col items-center w-full lg:max-w-[1140px] lg:mx-auto mb-[130px] px-5 lg:px-0 ">
@@ -90,6 +105,7 @@ function Projects() {
                                     className="flex flex-col w-full md:w-[48%] lg:w-[32%] mb-5 md:mb-0 p-5 project-card rounded-[20px]"
                                 >
                                     <ProjectCard
+                                        setToggle={setToggle}
                                         thumbnail={project.thumbnail}
                                         sizeThumbnail={project.sizeThumbnail}
                                         backgroundColor={
@@ -97,12 +113,27 @@ function Projects() {
                                         }
                                         fullImages={project.fullImages}
                                         websiteURL={project.websiteURL}
+                                        setCurrentFullImages={
+                                            setCurrentFullImages
+                                        }
+                                        setCurrentWebsiteURL={
+                                            setCurrentWebsiteURL
+                                        }
                                     />
                                 </div>
                             );
                         })}
                 </div>
             </div>
+
+            {toggle && (
+                <DynamicImportPopUpCard
+                    toggle={toggle}
+                    setToggle={setToggle}
+                    fullImages={currentFullImages}
+                    website={currentWebsiteURL}
+                />
+            )}
 
             <div
                 data-aos="zoom-in"

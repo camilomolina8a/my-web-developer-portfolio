@@ -19,7 +19,7 @@ function PopUpCard({ setToggle, fullImages, website }) {
 
                 <div className="flex items-start mt-[50px] md:mt-10 h-[70%] md:h-[80%] lg:h-[420px] w-[90%] md:w-[85%] rounded-[10px] overflow-y-scroll">
                     <Image
-                        src={fullImages[0]}
+                        src={fullImages}
                         width={800}
                         height={1800}
                         alt="website image"
