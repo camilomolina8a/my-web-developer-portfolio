@@ -31,10 +31,10 @@ const Navbar = () => {
 
     return (
         <header  
-            className={`${changeNavbar ? "bg-[#10051de7] " : "bg-none"} ease-in duration-300 flex h-[55px] md:h-[66px] w-full fixed top-0 right-0 left-0 z-[99]`}
+            className={`${changeNavbar ? "bg-[#10051de7] " : "bg-none"}  md:mt-0 ease-in duration-300 flex  h-[66px] md:h-[66px] w-full fixed top-0 right-0 left-0 z-[99]`}
         >
             <nav
-                className="flex px-5 md:mt-0 md:px-0 md:mx-auto md:h-[45px] justify-between items-center text-white w-[100%] md:w-[95%] lg:max-w-[1140px] md:py-8 "
+                className=" flex px-5 md:mt-0 md:px-0 md:mx-auto h-[66px] md:h-[45px] justify-between items-center text-white w-[100%] md:w-[95%] lg:max-w-[1140px] md:py-8 "
                 id="home"
             >
                 <div className="hidden md:block md:mt-1">
@@ -99,11 +99,11 @@ const Navbar = () => {
                 <div
                     className={` ${
                         toggle
-                            ? "-translate-x-full menu-transition flex flex-col items-center justify-end "
-                            : "translate-x-0 menu-transition flex flex-col items-center justify-end"
+                            ? "-translate-x-full menu-transition flex flex-col items-center justify-center "
+                            : "  translate-x-0 menu-transition flex flex-col items-center justify-center"
                     } md:hidden fixed w-full top-0 left-0 h-full bg-[var(--bg-body)] z-[99]`}
                 >
-                    <div className="absolute top-4 right-5">
+                    <div className="absolute top-6 right-5">
                         <Image
                             src="/images/close.svg"
                             height="24px"
@@ -114,8 +114,8 @@ const Navbar = () => {
                         />
                     </div>
 
-                    <div className="flex flex-col items-center justify-end h-[30%] border-b border-b-gray-500 w-[55%] pb-2">
-                        <h3 className=" font-rubik text-[3.8rem] logo">
+                    <div className="flex flex-col items-center justify-end h-[12%] border-b border-b-gray-500 w-[55%] pb-2">
+                        <h3 className=" font-rubik text-[4rem] logo">
                             Camilo
                         </h3>
                         <p className="font-rubik text-[1.3rem]">
@@ -123,11 +123,11 @@ const Navbar = () => {
                         </p>
                     </div>
 
-                    <ul className="flex flex-col items-center justify-evenly w-full h-[70%]">
+                    <ul className="flex flex-col items-center justify-center w-full h-[70%]">
                         {navLinks.map((navlink, index) => (
                             <li
                                 key={navlink.id}
-                                className="w-full flex justify-center text-[30px] z-[99] mb-4 tracking-wide"
+                                className="w-full flex justify-center text-[36px] font-rubik z-[99] mb-[80px] tracking-wide"
                                 onClick={() => setToggle(!toggle)}
                             >
                                 <a href={`#${navlink.id}`}>{navlink.title}</a>

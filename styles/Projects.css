@@ -26,8 +26,12 @@
 }
 /* END PROJECT CARD */
 
+.popup {
+    background-color: #150e24;
+    box-shadow: 3px 3px 15px #751ff546 !important;
+}
 .bg-popup {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.95);
 }
 
 .shadow {
