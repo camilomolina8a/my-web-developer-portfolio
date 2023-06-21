@@ -6,7 +6,10 @@ import radientCircle from "../public/images/gradient-circle.svg";
 
 const Hero = () => {
     return (
-        <div className="mt-[100px] md:mt-[80px] px-5 md:px-5 lg:px-0 lg:max-w-[1140px] lg:h-[calc(100vh-66px)] m-auto ">
+        <div
+            id="home"
+            className="mt-[100px] md:mt-[80px] px-5 md:px-5 lg:px-0 lg:max-w-[1140px] lg:h-[calc(100vh-66px)] m-auto "
+        >
             <h1 className=" text-[3rem] lg:text-[6rem] text-white  leading-0 md:leading-[6.8rem] font-rubik font-[700] prevent-select ">
                 <span
                     className="text-[2rem] md:text-[2.2rem] letter"

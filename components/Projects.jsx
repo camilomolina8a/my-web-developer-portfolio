@@ -22,11 +22,13 @@ function Projects() {
 
     return (
         <>
-            <div className="flex flex-col items-center w-full lg:max-w-[1140px] lg:mx-auto mb-[130px] px-5 lg:px-0 ">
+            <div
+                id="portfolio"
+                className="flex flex-col items-center w-full lg:max-w-[1140px] lg:mx-auto mb-[130px] px-5 lg:px-0 "
+            >
                 <h2
                     data-aos="fade-down"
                     className=" text-[4rem] lg:text-[5.5rem] text-white font-rubik font-[700] prevent-select flex mb-3 lg:mt-[40px] lg:pt-[40px] mt-[40px] "
-                    id="portfolio"
                 >
                     <br />
 

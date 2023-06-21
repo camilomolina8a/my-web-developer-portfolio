@@ -12,7 +12,7 @@ const Navbar = () => {
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollPos = window.scrollY;
-            
+
             if (currentScrollPos < 100) {
                 setChangeNavbar(false);
             } else {
@@ -30,13 +30,12 @@ const Navbar = () => {
     }, [prevScrollPos]);
 
     return (
-        <header  
-            className={`${changeNavbar ? "bg-[#10051de7] " : "bg-none"}  md:mt-0 ease-in duration-300 flex  h-[66px] md:h-[66px] w-full fixed top-0 right-0 left-0 z-[99]`}
+        <header
+            className={`${
+                changeNavbar ? "bg-[#10051de7] " : "bg-none"
+            }  md:mt-0 ease-in duration-300 flex  h-[66px] md:h-[66px]  max-w-[100%] fixed top-0 right-0 left-0 z-[99]`}
         >
-            <nav
-                className=" flex px-5 md:mt-0 md:px-0 md:mx-auto h-[66px] md:h-[45px] justify-between items-center text-white w-[100%] md:w-[95%] lg:max-w-[1140px] md:py-8 "
-                id="home"
-            >
+            <nav className=" flex px-5 md:mt-0 md:px-0 md:mx-auto h-[66px] md:h-[45px] justify-between items-center text-white w-[100%] md:w-[95%] lg:max-w-[1140px] md:py-8 ">
                 <div className="hidden md:block md:mt-1">
                     <h2 className="nav-logo font-rubik lg:text-[25px] font-[600] prevent-select">
                         CAMILO
@@ -64,7 +63,7 @@ const Navbar = () => {
                     <a
                         download="CV_Camilo_Molina.pdf"
                         href="/images/CV_Camilo Molina_eng.pdf"
-                        className={`md:flex hidden btn btn-gradient md:h-[43px] h-[38px] w-[115px] md:w-auto text-[14px] md:text-[1rem] font-rubik `}
+                        className={`md:flex hidden btn btn-gradient md:h-[43px] h-[38px] w-[125px] md:w-auto text-[14px] md:text-[1rem] font-rubik `}
                     >
                         <span>Resume</span>
 
@@ -114,20 +113,18 @@ const Navbar = () => {
                         />
                     </div>
 
-                    <div className="flex flex-col items-center justify-end h-[12%] border-b border-b-gray-500 w-[55%] pb-2">
-                        <h3 className=" font-rubik text-[4rem] logo">
-                            Camilo
-                        </h3>
+                    <div className="flex flex-col items-center justify-center h-[25%] border-b border-b-gray-500 w-[55%] pb-2">
+                        <h3 className=" font-rubik text-[4rem] logo">Camilo</h3>
                         <p className="font-rubik text-[1.3rem]">
                             Web Developer
                         </p>
                     </div>
 
-                    <ul className="flex flex-col items-center justify-center w-full h-[70%]">
+                    <ul className="flex flex-col items-center justify-evenly w-full h-[70%]">
                         {navLinks.map((navlink, index) => (
                             <li
                                 key={navlink.id}
-                                className="w-full flex justify-center text-[36px] font-rubik z-[99] mb-[80px] tracking-wide"
+                                className="w-full flex justify-center text-[32px] font-rubik z-[99] tracking-wide"
                                 onClick={() => setToggle(!toggle)}
                             >
                                 <a href={`#${navlink.id}`}>{navlink.title}</a>
@@ -136,7 +133,6 @@ const Navbar = () => {
                     </ul>
                 </div>
             </nav>
-            
         </header>
     );
 };

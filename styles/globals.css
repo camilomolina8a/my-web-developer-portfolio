@@ -5,12 +5,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: "MabryPro";
-    src: url("/fonts/MabryPro-Regular.woff") format("woff"),
-        url("/fonts/MabryPro-Bold.woff") format("woff"),
-        url("/fonts/MabryPro-Light.woff") format("woff");
-}
 
 :root {
     --background-black-one: #131313;
@@ -23,6 +17,10 @@
 
 body {
     background-color: var(--bg-body);
+    overflow-x: hidden !important;
+}
+html {
+    overflow-x: hidden !important;
 }
 
 html::-webkit-scrollbar,
@@ -46,6 +44,7 @@ html::-webkit-scrollbar-thumb:hover,
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 }
 
 a {
@@ -147,7 +146,6 @@ a {
 
 .border-bottom:hover::before {
     opacity: 1;
-    /* visibility: visible; */
 }
 
 /*-- Para el menu responsive --*/
@@ -166,4 +164,17 @@ a {
     font-weight: 600;
     background-color: #10051db0;
 }
+
+#__next-build-watcher {
+    display: none;
+}
 /*-----------------------------*/
+#home {
+    scroll-margin-block-start: 80px;
+}
+#about {
+    scroll-margin-block-start: 50px;
+}
+#contact {
+    scroll-margin-block-start: 30px;
+}

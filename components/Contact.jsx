@@ -133,7 +133,7 @@ function Contact() {
                         contact me.{" "}
                     </p>
 
-                    <div className=" h-[250px] md:h-[350px] relative overflow-y-auto overflow-x-hidden scrolling-touch">
+                    <div className=" h-[250px] md:h-[350px] relative overflow-hidden ">
                         <EarthCanvas />
                     </div>
                 </div>
